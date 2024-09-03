@@ -1,113 +1,157 @@
-import Image from "next/image";
+import Link from "next/link"
+import Artboards from "@/components/artboards"
+import Card from "@/components/card"
+import Header from "@/components/header"
+import Main from "@/components/main"
+import Section from "@/components/section"
+import ContactForm from "@/components/form"
+import Project from "@/components/project"
+import Testimonial from "@/components/testimonial"
+import Typewriter from "@/components/typewriter"
+import ChevronRight from "@/components/icons/ChevronRight"
+import Resume from "@/components/icons/Resume"
+import Github from "@/components/icons/Github"
+import { Button } from "@/components/ui/button"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { about, skills, projects, testimonials, faqs } from "@/lib/data"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Header image="/images/hero-1.webp">
+        <h1 className="text-4xl lg:text-5xl font-light text-slate-300 mb-2">Hi, my name is <strong className="font-bold text-slate-50">Jeff</strong></h1>
+        <p className="text-2xl lg:text-2xl mb-4 text-slate-300">and I&apos;m a <Typewriter /></p>
+        <div className="flex items-center gap-4">
+          <Button variant="custom" size="lg" asChild>
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              <Resume className="mr-2" />
+              My Resume
+            </a>
+          </Button>
+          <Button variant="secondary" size="lg" asChild>
+            <a href="https://github.com/jeffclaybrook" target="_blank" rel="noreferrer">
+              <Github className="mr-2" />
+              My Github
+            </a>
+          </Button>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      </Header>
+      <Main>
+        <Section title="About" subtitle="A little bit about me and the things I dabble in">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
+            {about.map((item, i) => (
+              <Card
+                key={i}
+                title={item.title}
+                icon={item.icon}
+              />
+            ))}
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/about">
+                More About Me
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[0].quote}
+          name={testimonials[0].name}
+          title={testimonials[0].title}
+          image={testimonials[0].image}
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+        <Section title="Skills" subtitle="I'm a Jeff of all trades">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {skills.map((skill, i) => (
+              <Card
+                key={i}
+                title={skill.title}
+                icon={skill.icon}
+              />
+            ))}
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/skills">
+                More Skills
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[1].quote}
+          name={testimonials[1].name}
+          title={testimonials[1].title}
+          image={testimonials[1].image}
+        />
+        <Section title="Projects" subtitle="A few sample projects you can demo">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
+            {projects.map((project, i) => (
+              <Project
+                key={i}
+                title={project.title}
+                href={project.href}
+                image={project.image}
+              />
+            ))}
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/projects">
+                More Projects
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[2].quote}
+          name={testimonials[2].name}
+          title={testimonials[2].title}
+          image={testimonials[2].image}
+        />
+        <Section title="Artboards" subtitle="Getting the most out of every pixel">
+          <div>
+            <Artboards />
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/artboards">
+                More Artboards
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[3].quote}
+          name={testimonials[3].name}
+          title={testimonials[3].title}
+          image={testimonials[3].image}
+        />
+        <Section title="FAQs" subtitle="Frequently asked questions">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((item, i) => (
+              <AccordionItem value={item.value} key={i}>
+                <AccordionTrigger className="text-start">{item.question}</AccordionTrigger>
+                <AccordionContent>{item.response}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </Section>
+        <Testimonial
+          quote={testimonials[4].quote}
+          name={testimonials[4].name}
+          title={testimonials[4].title}
+          image={testimonials[4].image}
+        />
+        <Section title="Contact" subtitle="Let's get in touch!">
+          <ContactForm />
+        </Section>
+      </Main>
+    </>
+  )
 }
