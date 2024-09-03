@@ -76,7 +76,7 @@ export const projects = [
  { title: "Contacts List", href: "https://crud-search-pagination-six.vercel.app/", image: "/images/project-4.webp" },
  { title: "Video Player", href: "https://jeffclaybrook.github.io/custom-video-player", image: "/images/project-5.webp" },
  { title: "Task App", href: "https://jeffclaybrook.github.io/Task-App", image: "/images/project-6.webp" },
- { title: "Writing Sample", href: "/AEUserGuide.pdf", image: "/images/project-7.webp" },
+ { title: "Writing Sample", href: "https://jeffclaybrook.s3.amazonaws.com/AE+User+Guide.pdf", image: "/images/project-7.webp" },
  { title: "YouTube Clone", href: "https://jeffclaybrook.github.io/UT-Channel/", image: "/images/project-8.webp" },
  { title: "Food Truck Menu", href: "https://lilbaghdad.com/", image: "/images/project-9.webp" },
 ]
