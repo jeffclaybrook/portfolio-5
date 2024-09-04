@@ -10,7 +10,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Jeff Claybrook",
-  description: "Built using NextJS, TailwindCSS, DaisyUI, and shadcn/ui"
+  description: "Jeff Claybrook portfolio built using NextJS, TailwindCSS, DaisyUI, and shadcn/ui"
 };
 
 export default function RootLayout({

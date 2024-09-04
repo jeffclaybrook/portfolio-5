@@ -23,7 +23,7 @@ export default function Home() {
         <p className="text-2xl lg:text-2xl mb-4 text-slate-300">and I&apos;m a <Typewriter /></p>
         <div className="flex items-center gap-4">
           <Button variant="custom" size="lg" asChild>
-            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            <a href="/Jeff_Claybrook_Resume.pdf" target="_blank" rel="noreferrer">
               <Resume className="mr-2" />
               My Resume
             </a>
@@ -36,6 +36,7 @@ export default function Home() {
           </Button>
         </div>
       </Header>
+
       <Main>
         <Section title="About" subtitle="A little bit about me and the things I dabble in">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
@@ -56,12 +57,14 @@ export default function Home() {
             </Button>
           </div>
         </Section>
+
         <Testimonial
           quote={testimonials[0].quote}
           name={testimonials[0].name}
           title={testimonials[0].title}
           image={testimonials[0].image}
         />
+
         <Section title="Skills" subtitle="I'm a Jeff of all trades">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
             {skills.map((skill, i) => (
@@ -81,12 +84,14 @@ export default function Home() {
             </Button>
           </div>
         </Section>
+
         <Testimonial
           quote={testimonials[1].quote}
           name={testimonials[1].name}
           title={testimonials[1].title}
           image={testimonials[1].image}
         />
+
         <Section title="Projects" subtitle="A few sample projects you can demo">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
             {projects.map((project, i) => (
@@ -107,12 +112,14 @@ export default function Home() {
             </Button>
           </div>
         </Section>
+
         <Testimonial
           quote={testimonials[2].quote}
           name={testimonials[2].name}
           title={testimonials[2].title}
           image={testimonials[2].image}
         />
+
         <Section title="Artboards" subtitle="Getting the most out of every pixel">
           <div>
             <Artboards />
@@ -126,12 +133,14 @@ export default function Home() {
             </Button>
           </div>
         </Section>
+
         <Testimonial
           quote={testimonials[3].quote}
           name={testimonials[3].name}
           title={testimonials[3].title}
           image={testimonials[3].image}
         />
+
         <Section title="FAQs" subtitle="Frequently asked questions">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((item, i) => (
@@ -142,12 +151,14 @@ export default function Home() {
             ))}
           </Accordion>
         </Section>
+
         <Testimonial
           quote={testimonials[4].quote}
           name={testimonials[4].name}
           title={testimonials[4].title}
           image={testimonials[4].image}
         />
+
         <Section title="Contact" subtitle="Let's get in touch!">
           <ContactForm />
         </Section>
