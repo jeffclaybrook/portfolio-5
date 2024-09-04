@@ -123,17 +123,17 @@ export const faqs = [
  {
   value: "faq-2",
   question: "What is your greatest strength?",
-  response: "Empathy and understanding where people come from."
+  response: "Empathy and understanding where people come from. I'm a strong user advocate and believe that if a customer is unable to use a certain technology, it's not because the user is incompentent but rather because the technology hasn't been made easy enough for them to use."
  },
  {
   value: "faq-3",
   question: "What is your greatest weakness?",
-  response: "I sometimes have a hard time understanding abstract concepts. I am, however, good at recognizing patterns so to compensate, I apply what I know about patterns to a given concept and it becomes less abstract."
+  response: "I sometimes have a hard time understanding abstract concepts. I am, however, good at recognizing patterns so to compensate, I apply what I know about patterns to a given concept and the concept becomes less abstract."
  },
  {
   value: "faq-4",
   question: "Why should I hire you?",
-  response: "I'm a utility player that can gracefully wear several different hats and I work well with other people. I have a broad range of experience, a positive attitude, and an eagerness to learn and be utilized."
+  response: "I'm a utility player that can gracefully wear several different hats and I'm personable and work well with other people. I have a broad range of experience, a positive attitude, and an eagerness to learn and be utilized."
  },
  {
   value: "faq-5",
@@ -143,12 +143,17 @@ export const faqs = [
  {
   value: "faq-6",
   question: "What do you like to do outside of work?",
-  response: "I enjoy creating mini React applications as side projects, playing dominoes, spending time with friends and family, and taking my dog to the park."
+  response: "I enjoy creating mini React and NextJS applications as side projects, playing dominoes, politics, spending time with friends and family, and taking my dog to the park."
  },
  {
   value: "faq-7",
   question: "Describe your most challenging project.",
-  response: "I had to create a user guide from scratch that included detailed descriptions of each feature of the platform, step-by-step instructions on how to use each feature, and supporting graphics/imagery of the platform. It ended up being 170+ pages long."
+  response: "I had to create a user guide from scratch that included detailed descriptions of each feature of the platform, step-by-step instructions on how to use each feature, table of contents, tech specs, glossary, and supporting graphics/imagery of the platform. It ended up being 170+ pages long."
+ },
+ {
+  value: "faq-8",
+  question: "How did you go from politics to tech?",
+  response: "I thought I wanted to be a lawyer but discovered a passion for UI/UX while I was interning with a startup company during my last semester of school. I was hired as a channel manager for a partner company and eventually promoted to product manager, where I had the opportunity to work with our remote developers on a daily basis. I began learning frontend develoment as a way to supplement my knowledge of how web technologies work and more effectively communicate with our developers."
  }
 ]
 
