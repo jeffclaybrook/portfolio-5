@@ -83,6 +83,12 @@ export const projects = [
 
 export const testimonials = [
  {
+  name: "Randy Combs",
+  title: "President & COO, Arena Edge",
+  quote: "It was amazing how quickly he learned new technologies and prcoesses that were critical to us. Jeff was incredibly valuable to us and I highly recommend him for whatever position he sets his sights on.",
+  image: "/images/hero-1.webp"
+ },
+ {
   name: "Brian Skulski",
   title: "Co-Founder & Vice President, Value Waste Services",
   quote: "In a world where I believe people can be your greatest joy or your biggest thorn, I can say with conviction that Jeff is a wonderful breath of fresh air to work alongside.",
@@ -133,7 +139,7 @@ export const faqs = [
  {
   value: "faq-4",
   question: "Why should I hire you?",
-  response: "I'm a utility player that can gracefully wear several different hats and I'm personable and work well with other people. I have a broad range of experience, a positive attitude, and an eagerness to learn and be utilized."
+  response: "I'm a utility player that can gracefully wear several different hats, I'm personable, and I work well with other people. I have a broad range of experience, a positive attitude, and an eagerness to learn and be utilized."
  },
  {
   value: "faq-5",
