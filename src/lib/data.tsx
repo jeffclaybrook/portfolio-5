@@ -84,13 +84,13 @@ export const projects = [
 export const testimonials = [
  {
   name: "Randy Combs",
-  title: "President & COO, Arena Edge",
+  title: "President, Arena Edge",
   quote: "It was amazing how quickly he learned new technologies and processes that were critical to us. Jeff was incredibly valuable to us and I highly recommend him for whatever position he sets his sights on.",
   image: "/images/hero-1.webp"
  },
  {
   name: "Brian Skulski",
-  title: "Co-Founder & Vice President, Value Waste Services",
+  title: "Vice President & Co-Founder, Value Waste Services",
   quote: "In a world where I believe people can be your greatest joy or your biggest thorn, I can say with conviction that Jeff is a wonderful breath of fresh air to work alongside.",
   image: "/images/hero-2.webp"
  },
@@ -102,7 +102,7 @@ export const testimonials = [
  },
  {
   name: "Karen Clardy",
-  title: "President, RISD Board of Trustees",
+  title: "Former President, RISD Board of Trustees",
   quote: "Jeff goes out of his way to make sure no one is left out of an activity. His sense of integrity is beyond reproach. I can always count on Jeff to do the right thing.",
   image: "/images/hero-4.webp"
  },
