@@ -85,7 +85,7 @@ export const testimonials = [
  {
   name: "Randy Combs",
   title: "President & COO, Arena Edge",
-  quote: "It was amazing how quickly he learned new technologies and prcoesses that were critical to us. Jeff was incredibly valuable to us and I highly recommend him for whatever position he sets his sights on.",
+  quote: "It was amazing how quickly he learned new technologies and processes that were critical to us. Jeff was incredibly valuable to us and I highly recommend him for whatever position he sets his sights on.",
   image: "/images/hero-1.webp"
  },
  {
