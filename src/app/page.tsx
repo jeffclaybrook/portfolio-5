@@ -38,7 +38,7 @@ export default function Home() {
       </Header>
 
       <Main>
-        <Section title="About" subtitle="A little bit about me and the things I dabble in">
+        <Section title="About" subtitle="A little bit about me and what I bring to the party">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
             {about.map((item, i) => (
               <Card
