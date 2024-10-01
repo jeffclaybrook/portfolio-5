@@ -70,7 +70,7 @@ export const skills = [
 ]
 
 export const projects = [
- { title: "Music App", href: "https://spectacular-smakager-deac89.netlify.app/", image: "/images/project-1.webp" },
+ { title: "Music App", href: "https://jeffclaybrook.github.io/Music-App/", image: "/images/project-1.webp" },
  { title: "Calculator App", href: "https://jeffclaybrook.github.io/CalcPWA", image: "/images/project-2.webp" },
  { title: "Notes App", href: "https://jeffclaybrook.github.io/Notes-App", image: "/images/project-3.webp" },
  { title: "Contacts List", href: "https://crud-search-pagination-six.vercel.app/", image: "/images/project-4.webp" },
