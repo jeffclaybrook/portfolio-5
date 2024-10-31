@@ -1,42 +1,58 @@
-"use client"
+import Image from "next/image"
+import { Card } from "./ui/card"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import { desktopArtboards, mobileArtboards } from "@/lib/data"
 
-import { useState } from "react"
-import { Gallery } from "react-grid-gallery"
-import { artboards, CustomImage } from "@/lib/data"
-import Lightbox from "yet-another-react-lightbox"
-import "yet-another-react-lightbox/styles.css"
-
-const slides = artboards.map(({ original, width, height }) => ({
- src: original,
- width,
- height
-}))
-
-const Artboards = () => {
- const [index, setIndex] = useState(-1)
-
- const handleClick = (index: number, item: CustomImage) => {
-  setIndex(index)
- }
-
+export default function Artboards() {
  return (
-  <>
-   <Gallery
-    images={artboards}
-    onClick={handleClick}
-    enableImageSelection={false}
-    margin={2}
-    rowHeight={220}
-    maxRows={4}
-   />
-   <Lightbox
-    slides={slides}
-    open={index >= 0}
-    index={index}
-    close={() => setIndex(-1)}
-   />
-  </>
+  <Tabs defaultValue="desktop">
+   <TabsList className="grid w-full grid-cols-2 mb-4">
+    <TabsTrigger value="desktop">Desktop</TabsTrigger>
+    <TabsTrigger value="mobile">Mobile</TabsTrigger>
+   </TabsList>
+   <TabsContent value="desktop">
+    <Carousel>
+     <CarouselContent>
+      {desktopArtboards.map((artboard, i) => (
+       <CarouselItem key={i}>
+        <Card className="p-4">
+         <Image
+          src={artboard.src}
+          alt="Artboard"
+          width="1024"
+          height="600"
+          className="w-full mx-auto rounded-md"
+         />
+        </Card>
+       </CarouselItem>
+      ))}
+     </CarouselContent>
+     <CarouselPrevious />
+     <CarouselNext />
+    </Carousel>
+   </TabsContent>
+   <TabsContent value="mobile">
+    <Carousel>
+     <CarouselContent>
+      {mobileArtboards.map((artboard, i) => (
+       <CarouselItem key={i}>
+        <Card className="p-4">
+         <Image
+          src={artboard.src}
+          alt="Artboard"
+          width="338"
+          height="600"
+          className="mx-auto rounded-md"
+         />
+        </Card>
+       </CarouselItem>
+      ))}
+     </CarouselContent>
+     <CarouselPrevious />
+     <CarouselNext />
+    </Carousel>
+   </TabsContent>
+  </Tabs>
  )
 }
-
-export default Artboards

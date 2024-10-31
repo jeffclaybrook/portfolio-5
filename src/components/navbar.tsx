@@ -1,9 +1,9 @@
 "use client"
 
-import NavbarDesktop from "./navbar-desktop"
-import NavbarMobile from "./navbar-mobile"
 import { useMediaQuery } from "usehooks-ts"
 import { NavbarItems } from "@/types"
+import NavbarDesktop from "./navbar-desktop"
+import NavbarMobile from "./navbar-mobile"
 
 const navbarItems: NavbarItems = {
  links: [

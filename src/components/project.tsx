@@ -1,4 +1,4 @@
-import NewTab from "./icons/NewTab"
+import { NewTab } from "./icons"
 
 type ProjectProps = {
  title: string

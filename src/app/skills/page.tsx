@@ -4,7 +4,7 @@ import Header from "@/components/header"
 import Main from "@/components/main"
 import Section from "@/components/section"
 import Transition from "@/components/transition"
-import ChevronLeft from "@/components/icons/ChevronLeft"
+import { ChevronLeft } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import { skills } from "@/lib/data"
 
@@ -15,7 +15,6 @@ export default function Page() {
    <h1 className="text-4xl lg:text-5xl font-light text-slate-50 mb-2">Skills</h1>
    <p className="text-2xl lg:text-2xl mb-4 text-slate-300">I&apos;m a <s>Jack</s> Jeff of all trades</p>
    </Header>
-
    <Main>
     <Section>
      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">

@@ -1,34 +1,5 @@
 import { Image } from "react-grid-gallery"
-import Facebook from "@/components/icons/Facebook"
-import Github from "@/components/icons/Github"
-import Linkedin from "@/components/icons/Linkedin"
-import Youtube from "@/components/icons/Youtube"
-import ProductManagement from "@/components/icons/ProductManagement"
-import FrontendDevelopment from "@/components/icons/FrontendDevelopment"
-import UXDesignResearch from "@/components/icons/UXDesignResearch"
-import ContentCreator from "@/components/icons/ContentCreator"
-import QADebugging from "@/components/icons/QADebugging"
-import TechnicalWriting from "@/components/icons/TechnicalWriting"
-import Bootstrap from "@/components/icons/Bootstrap"
-import ChatGPT from "@/components/icons/ChatGPT"
-import Css3 from "@/components/icons/Css3"
-import Html5 from "@/components/icons/Html5"
-import Invision from "@/components/icons/Invision"
-import Javascript from "@/components/icons/Javascript"
-import Jira from "@/components/icons/Jira"
-import Json from "@/components/icons/Json"
-import Keynote from "@/components/icons/Keynote"
-import MongoDB from "@/components/icons/MongoDB"
-import Mui from "@/components/icons/Mui"
-import Netlify from "@/components/icons/Netlify"
-import Nextjs from "@/components/icons/Nextjs"
-import Nodejs from "@/components/icons/Nodejs"
-import Npm from "@/components/icons/Npm"
-import React from "@/components/icons/React"
-import Sass from "@/components/icons/Sass"
-import Trello from "@/components/icons/Trello"
-import Typescript from "@/components/icons/Typescript"
-import Zendesk from "@/components/icons/Zendesk"
+import { Bootstrap, ChatGPT, ContentCreator, Css3, Facebook, FrontendDevelopment, Github, Html5, Invision, Javascript, Jira, Json, Keynote, Linkedin, MongoDB, Mui, Netlify, Nextjs, Nodejs, Npm, ProductManagement, QADebugging, React, Sass, TechnicalWriting, Trello, Typescript, UXDesignResearch, Youtube, Zendesk } from "@/components/icons"
 
 export const socials = [
  { label: "Linkedin", href: "https://linkedin.com/in/jeff-claybrook", icon: <Linkedin /> },
@@ -294,4 +265,30 @@ export const artboards: CustomImage[] = [
   width: 338,
   height: 600
  }
+]
+
+export const desktopArtboards = [
+ { src: "/images/artboard-1.webp" },
+ { src: "/images/artboard-2.webp" },
+ { src: "/images/artboard-3.webp" },
+ { src: "/images/artboard-4.webp" },
+ { src: "/images/artboard-5.webp" },
+ { src: "/images/artboard-6.webp" },
+ { src: "/images/artboard-7.webp" },
+ { src: "/images/artboard-8.webp" },
+ { src: "/images/artboard-9.webp" }
+]
+
+export const mobileArtboards = [
+ { src: "/images/artboard-11.webp" },
+ { src: "/images/artboard-12.webp" },
+ { src: "/images/artboard-13.webp" },
+ { src: "/images/artboard-14.webp" },
+ { src: "/images/artboard-15.webp" },
+ { src: "/images/artboard-16.webp" },
+ { src: "/images/artboard-17.webp" },
+ { src: "/images/artboard-18.webp" },
+ { src: "/images/artboard-19.webp" },
+ { src: "/images/artboard-20.webp" },
+ { src: "/images/artboard-21.webp" }
 ]

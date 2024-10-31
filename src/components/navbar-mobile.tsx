@@ -1,12 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import Menu from "./icons/Menu"
 import { usePathname } from "next/navigation"
 import { Button } from "./ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet"
 import { NavbarButtonSheet as NavbarButton } from "./navbar-button"
 import { NavbarItems } from "@/types"
+import { Menu } from "./icons"
 import { socials } from "@/lib/data"
 
 interface NavbarMobileProps {
