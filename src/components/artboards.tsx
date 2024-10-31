@@ -1,10 +1,17 @@
+"use client"
+
 import Image from "next/image"
+import { useMediaQuery } from "usehooks-ts"
 import { Card } from "./ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import { desktopArtboards, mobileArtboards } from "@/lib/data"
 
 export default function Artboards() {
+ const isDesktop = useMediaQuery("(min-width: 1024px)", {
+  initializeWithValue: false
+ })
+
  return (
   <Tabs defaultValue="desktop">
    <TabsList className="grid w-full grid-cols-2 mb-4">
@@ -28,8 +35,12 @@ export default function Artboards() {
        </CarouselItem>
       ))}
      </CarouselContent>
-     <CarouselPrevious />
-     <CarouselNext />
+     {isDesktop && (
+      <>
+       <CarouselPrevious />
+       <CarouselNext />
+      </>
+     )}
     </Carousel>
    </TabsContent>
    <TabsContent value="mobile">
@@ -49,8 +60,12 @@ export default function Artboards() {
        </CarouselItem>
       ))}
      </CarouselContent>
-     <CarouselPrevious />
-     <CarouselNext />
+     {isDesktop && (
+      <>
+       <CarouselPrevious />
+       <CarouselNext />
+      </>
+     )}
     </Carousel>
    </TabsContent>
   </Tabs>
