@@ -1,5 +1,12 @@
 import { SVGProps } from "react"
 
+export const AntDesign = (props: SVGProps<SVGSVGElement>) => (
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32" fill="#465e8a" {...props}>
+  <title>Ant Design</title>
+  <path d="M716.3 313.8c19-18.9 19-49.7 0-68.6l-69.9-69.9.1.1c-18.5-18.5-50.3-50.3-95.3-95.2-21.2-20.7-55.5-20.5-76.5.5L80.9 474.2a53.84 53.84 0 0 0 0 76.4L474.6 944a54.14 54.14 0 0 0 76.5 0l165.1-165c19-18.9 19-49.7 0-68.6a48.7 48.7 0 0 0-68.7 0l-125 125.2c-5.2 5.2-13.3 5.2-18.5 0L189.5 521.4c-5.2-5.2-5.2-13.3 0-18.5l314.4-314.2c.4-.4.9-.7 1.3-1.1 5.2-4.1 12.4-3.7 17.2 1.1l125.2 125.1c19 19 49.8 19 68.7 0zM408.6 514.4a106.3 106.2 0 1 0 212.6 0 106.3 106.2 0 1 0-212.6 0zm536.2-38.6L821.9 353.5c-19-18.9-49.8-18.9-68.7.1a48.4 48.4 0 0 0 0 68.6l83 82.9c5.2 5.2 5.2 13.3 0 18.5l-81.8 81.7a48.4 48.4 0 0 0 0 68.6 48.7 48.7 0 0 0 68.7 0l121.8-121.7a53.93 53.93 0 0 0-.1-76.4z" />
+ </svg>
+)
+
 export const Bootstrap = (props: SVGProps<SVGSVGElement>) => (
  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="#465e8a" {...props}>
   <title>Bootstrap</title>
@@ -39,6 +46,16 @@ export const Css3 = (props: SVGProps<SVGSVGElement>) => (
  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="#465e8a" {...props}>
   <title>CSS3</title>
   <path d="M4 2l2.181 24.738 9.819 3.262 9.819-3.262 2.181-24.738zM23.569 7l-0.3 2.956-7.225 3.087h6.969l-0.8 9.163-6.137 1.794-6.175-1.825-0.4-4.619h3.056l0.2 2.394 3.287 0.831 3.419-0.962 0.231-3.85-10.406-0.031-0.225-2.894 7.413-3.087h-7.681l-0.363-2.956z" />
+ </svg>
+)
+
+export const DaisyUi = (props: SVGProps<SVGSVGElement>) => (
+ <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" {...props}>
+  <title>Daisy UI</title>
+  <rect x="256" y="670.72" width="512" height="256" rx="128" fill="#465e8a" />
+  <circle cx="512" cy="353.28" r="256" fill="none"/>
+  <circle cx="512" cy="353.28" r="261" stroke="#465e8a" stroke-opacity="0.2" stroke-width="10"/>
+  <circle cx="512" cy="353.28" r="114.688" fill="#465e8a"/>
  </svg>
 )
 
@@ -204,9 +221,25 @@ export const Sass = (props: SVGProps<SVGSVGElement>) => (
  </svg>
 )
 
+export const ShadcnUi = (props: SVGProps<SVGSVGElement>) => (
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="32" height="32" fill="#465e8a" {...props}>
+  <title>Shadcn UI</title>
+  <rect width="256" height="256" fill="none"></rect>
+  <line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="#465e8a" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line>
+  <line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="#465e8a" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line>
+ </svg>
+)
+
+export const TailwindCss = (props: SVGProps<SVGSVGElement>) => (
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="#465e8a" {...props}>
+  <title>Tailwind CSS</title>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z" />
+ </svg>
+)
+
 export const TechnicalWriting = (props: SVGProps<SVGSVGElement>) => (
  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="42" height="42" fill="#465e8a" {...props}>
-  <title>Technical Writer</title>
+  <title>Technical Writing</title>
   <path d="M490.001-130.001V-191L701.77-402.769l60.999 60.999L551-130.001h-60.999Zm-360-207.307v-45.384h294.615v45.384H130.001Zm671.921-43.615-60.999-60.999 29-29q6.077-6.077 15.808-6.077 9.73 0 16.191 6.077l29 29q6.077 6.461 6.077 16.191 0 9.731-6.077 15.808l-29 29ZM130.001-501.154v-45.384h461.922v45.384H130.001Zm0-163.462v-45.383h461.922v45.383H130.001Z" />
  </svg>
 )

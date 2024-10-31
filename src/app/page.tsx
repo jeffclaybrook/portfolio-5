@@ -136,7 +136,7 @@ export default function Home() {
           image={testimonials[3].image}
         />
         <Section title="FAQs" subtitle="Frequently asked questions">
-          <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto">
+          <Accordion type="single" collapsible>
             {faqs.map((item, i) => (
               <AccordionItem value={item.value} key={i}>
                 <AccordionTrigger className="text-start">{item.question}</AccordionTrigger>

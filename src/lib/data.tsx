@@ -1,5 +1,4 @@
-import { Image } from "react-grid-gallery"
-import { Bootstrap, ChatGPT, ContentCreator, Css3, Facebook, FrontendDevelopment, Github, Html5, Invision, Javascript, Jira, Json, Keynote, Linkedin, MongoDB, Mui, Netlify, Nextjs, Nodejs, Npm, ProductManagement, QADebugging, React, Sass, TechnicalWriting, Trello, Typescript, UXDesignResearch, Youtube, Zendesk } from "@/components/icons"
+import { AntDesign, Bootstrap, ChatGPT, ContentCreator, Css3, DaisyUi, Facebook, FrontendDevelopment, Github, Html5, Invision, Javascript, Jira, Json, Keynote, Linkedin, MongoDB, Mui, Netlify, Nextjs, Nodejs, Npm, ProductManagement, QADebugging, React, Sass, ShadcnUi, TailwindCss, TechnicalWriting, Trello, Typescript, UXDesignResearch, Youtube, Zendesk } from "@/components/icons"
 
 export const socials = [
  { label: "Linkedin", href: "https://linkedin.com/in/jeff-claybrook", icon: <Linkedin /> },
@@ -18,9 +17,11 @@ export const about = [
 ]
 
 export const skills = [
+ { title: "Ant Design", icon: <AntDesign /> },
  { title: "Boostrap", icon: <Bootstrap /> },
  { title: "ChatGPT", icon: <ChatGPT /> },
  { title: "CSS3", icon: <Css3 /> },
+ { title: "DaisyUI", icon: <DaisyUi /> },
  { title: "HTML5", icon: <Html5 /> },
  { title: "Invision", icon: <Invision /> },
  { title: "JavaScript", icon: <Javascript /> },
@@ -35,6 +36,8 @@ export const skills = [
  { title: "NPM", icon: <Npm /> },
  { title: "React", icon: <React /> },
  { title: "Sass", icon: <Sass /> },
+ { title: "Shadcn UI", icon: <ShadcnUi /> },
+ { title: "TailwindCSS", icon: <TailwindCss /> },
  { title: "Trello", icon: <Trello /> },
  { title: "Typescript", icon: <Typescript /> },
  { title: "Zendesk", icon: <Zendesk /> }
@@ -131,139 +134,6 @@ export const faqs = [
   value: "faq-8",
   question: "How did you go from politics to tech?",
   response: "I thought I wanted to be a lawyer but discovered a passion for UI/UX while I was interning with a startup company during my last semester of school. I was hired as a channel manager for a partner company and eventually promoted to product manager, where I had the opportunity to work with our remote developers on a daily basis. I began learning frontend develoment as a way to supplement my knowledge of how web technologies work and more effectively communicate with our developers."
- }
-]
-
-export interface CustomImage extends Image {
- original: string
-}
-
-export const artboards: CustomImage[] = [
- {
-  original: "/images/artboard-1.webp",
-  src: "/images/artboard-1.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-11.webp",
-  src: "/images/artboard-11.webp",
-  width: 292,
-  height: 600
- },
- {
-  original: "/images/artboard-2.webp",
-  src: "/images/artboard-2.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-3.webp",
-  src: "/images/artboard-3.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-12.webp",
-  src: "/images/artboard-12.webp",
-  width: 292,
-  height: 600
- },
- {
-  original: "/images/artboard-13.webp",
-  src: "/images/artboard-13.webp",
-  width: 299,
-  height: 600
- },
- {
-  original: "/images/artboard-4.webp",
-  src: "/images/artboard-4.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-14.webp",
-  src: "/images/artboard-14.webp",
-  width: 299,
-  height: 600
- },
- {
-  original: "/images/artboard-5.webp",
-  src: "/images/artboard-5.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-15.webp",
-  src: "/images/artboard-15.webp",
-  width: 292,
-  height: 600
- },
- {
-  original: "/images/artboard-6.webp",
-  src: "/images/artboard-6.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-16.webp",
-  src: "/images/artboard-16.webp",
-  width: 292,
-  height: 600
- },
- {
-  original: "/images/artboard-7.webp",
-  src: "/images/artboard-7.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-17.webp",
-  src: "/images/artboard-17.webp",
-  width: 338,
-  height: 600
- },
- {
-  original: "/images/artboard-8.webp",
-  src: "/images/artboard-8.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-18.webp",
-  src: "/images/artboard-18.webp",
-  width: 338,
-  height: 600
- },
- {
-  original: "/images/artboard-9.webp",
-  src: "/images/artboard-9.webp",
-  width: 960,
-  height: 600
- },
- {
-  original: "/images/artboard-19.webp",
-  src: "/images/artboard-19.webp",
-  width: 338,
-  height: 600
- },
- {
-  original: "/images/artboard-10.webp",
-  src: "/images/artboard-10.webp",
-  width: 1234,
-  height: 600
- },
- {
-  original: "/images/artboard-20.webp",
-  src: "/images/artboard-20.webp",
-  width: 338,
-  height: 600
- },
- {
-  original: "/images/artboard-21.webp",
-  src: "/images/artboard-21.webp",
-  width: 338,
-  height: 600
  }
 ]
 

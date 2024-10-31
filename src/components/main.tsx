@@ -1,12 +1,13 @@
-import { ReactNode } from "react"
+import { ReactNode, FC } from "react"
 
 type MainProps = {
  children: ReactNode
+ className?: string
 }
 
-const Main = ({ children }: MainProps) => {
+const Main: FC<MainProps> = ({ children, className = "" }) => {
  return (
-  <main className="px-4">{children}</main>
+  <main className={`px-4 ${className}`} role="main">{children}</main>
  )
 }
 
