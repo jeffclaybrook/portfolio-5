@@ -8,6 +8,7 @@ import ContactForm from "@/components/form"
 import Project from "@/components/project"
 import Testimonial from "@/components/testimonial"
 import Typewriter from "@/components/typewriter"
+import Transition from "@/components/transition"
 import ChevronRight from "@/components/icons/ChevronRight"
 import Resume from "@/components/icons/Resume"
 import Github from "@/components/icons/Github"
@@ -17,7 +18,7 @@ import { about, skills, projects, testimonials, faqs } from "@/lib/data"
 
 export default function Home() {
   return (
-    <>
+    <Transition>
       <Header image="/images/hero-1.webp">
         <h1 className="text-4xl lg:text-5xl font-light text-slate-300 mb-2">Hi, my name is <strong className="font-bold text-slate-50">Jeff</strong></h1>
         <p className="text-2xl lg:text-2xl mb-4 text-slate-300">and I&apos;m a <Typewriter /></p>
@@ -163,6 +164,6 @@ export default function Home() {
           <ContactForm />
         </Section>
       </Main>
-    </>
+    </Transition>
   )
 }
