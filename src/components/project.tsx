@@ -6,7 +6,7 @@ type ProjectProps = {
  image: string
 }
 
-const Project = ({ title, href, image }: ProjectProps) => {
+export default function Project({ title, href, image }: ProjectProps) {
  return (
   <a
    href={href}
@@ -22,5 +22,3 @@ const Project = ({ title, href, image }: ProjectProps) => {
   </a>
  )
 }
-
-export default Project

@@ -2,7 +2,7 @@
 
 import { useTypewriter } from "react-simple-typewriter"
 
-const Typewriter = () => {
+export default function Typewriter() {
  const [text] = useTypewriter({
   words: [
    "product manager.",
@@ -22,5 +22,3 @@ const Typewriter = () => {
   <strong className="font-bold text-slate-50">{text}</strong>
  )
 }
-
-export default Typewriter

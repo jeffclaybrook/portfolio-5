@@ -5,7 +5,7 @@ type HeaderProps = {
  children: ReactNode
 }
 
-const Header = ({ image, children }: HeaderProps) => {
+export default function Header({ image, children }: HeaderProps) {
  return (
   <header className="hero min-h-screen" style={{ background: `url(${image}) no-repeat center center / cover`}}>
    <div className="flex items-center justify-center hero-overlay bg-opacity-60 px-4">
@@ -16,5 +16,3 @@ const Header = ({ image, children }: HeaderProps) => {
   </header>
  )
 }
-
-export default Header

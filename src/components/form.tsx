@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
-import { Form, FormField, FormItem, FormLabel, FormControl } from "./ui/form"
+import { Form, FormField, FormItem, FormControl } from "./ui/form"
 import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { Button } from "./ui/button"
@@ -14,7 +14,7 @@ const formSchema = z.object({
  message: z.string()
 })
 
-const ContactForm = () => {
+export default function ContactForm() {
  const form = useForm<z.infer<typeof formSchema>>({
   resolver: zodResolver(formSchema),
   defaultValues: {
@@ -37,7 +37,6 @@ const ContactForm = () => {
      name="name"
      render={({ field }) => (
       <FormItem>
-       <FormLabel>Name</FormLabel>
        <FormControl>
         <Input placeholder="Name" {...field} />
        </FormControl>
@@ -49,7 +48,6 @@ const ContactForm = () => {
      name="email"
      render={({ field }) => (
       <FormItem>
-       <FormLabel>Email</FormLabel>
        <FormControl>
         <Input placeholder="Email" {...field} />
        </FormControl>
@@ -61,7 +59,6 @@ const ContactForm = () => {
      name="message"
      render={({ field }) => (
       <FormItem>
-       <FormLabel>Message</FormLabel>
        <FormControl>
         <Textarea placeholder="Message" {...field} />
        </FormControl>
@@ -73,5 +70,3 @@ const ContactForm = () => {
   </Form>
  )
 }
-
-export default ContactForm

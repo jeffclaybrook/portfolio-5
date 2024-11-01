@@ -4,7 +4,7 @@ type CardProps = {
  icon: JSX.Element
 }
 
-const Card = ({ title, subtitle, icon }: CardProps) => {
+export default function Card({ title, subtitle, icon }: CardProps) {
  return (
   <div className="flex flex-col items-center justify-center text-center gap-3.5 bg-slate-50 shadow-sm rounded-md py-6 px-3.5">
    <span className="flex items-center justify-center h-14 w-14 rounded-md p-3.5 text-primary bg-blue-100">{icon}</span>
@@ -13,5 +13,3 @@ const Card = ({ title, subtitle, icon }: CardProps) => {
   </div>
  )
 }
-
-export default Card

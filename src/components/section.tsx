@@ -6,7 +6,7 @@ type SectionProps = {
  children: ReactNode
 }
 
-const Section = ({ title, subtitle, children }: SectionProps) => {
+export default function Section({ title, subtitle, children }: SectionProps) {
  return (
   <section className="py-24 max-w-6xl w-full mx-auto">
    {title && <h2 className="text-4xl lg:text-5xl text-center text-slate-500 tracking-wide mb-2">{title}</h2>}
@@ -15,5 +15,3 @@ const Section = ({ title, subtitle, children }: SectionProps) => {
   </section>
  )
 }
-
-export default Section
