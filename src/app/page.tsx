@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import Artboards from "@/components/artboards"
 import Card from "@/components/card"
@@ -7,14 +9,29 @@ import Section from "@/components/section"
 import ContactForm from "@/components/form"
 import Project from "@/components/project"
 import Testimonial from "@/components/testimonial"
-import Typewriter from "@/components/typewriter"
 import Transition from "@/components/transition"
+import { useTypewriter } from "react-simple-typewriter"
 import { ChevronRight, Github, Resume } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { about, skills, projects, testimonials, faqs } from "@/lib/data"
 
 export default function Home() {
+  const [text] = useTypewriter({
+    words: [
+      "product manager.",
+      "frontend developer.",
+      "UX/UI designer.",
+      "content creator.",
+      "QA & debugger.",
+      "technical writer."
+    ],
+    loop: 0,
+    typeSpeed: 125,
+    deleteSpeed: 50,
+    delaySpeed: 2050
+  })
+
   return (
     <Transition>
       <Header image="/images/hero-1.webp">
@@ -22,7 +39,7 @@ export default function Home() {
           Hi, my name is <strong className="font-bold text-slate-50">Jeff</strong>
         </h1>
         <p className="text-2xl lg:text-2xl mb-4 text-slate-300">
-          and I&apos;m a <Typewriter />
+          and I&apos;m a <strong className="font-bold text-slate-50">{text}</strong>
         </p>
         <div className="flex items-center gap-4">
           <Button variant="custom" size="lg" asChild>

@@ -6,7 +6,9 @@ import { socials } from "@/lib/data"
 export default function Footer() {
  return (
   <footer className="flex flex-col items-center py-16 bg-slate-50">
-   <Link href="/" className="text-2xl uppercase mb-8">Jeffrey <strong className="font-bold">Claybrook</strong></Link>
+   <Link href="/" className="text-2xl uppercase mb-8">
+    Jeffrey <strong className="font-bold">Claybrook</strong>
+   </Link>
    <ul className="flex items-center justify-center gap-4 mb-8">
     {socials.map((social, i) => (
      <li key={i}>
